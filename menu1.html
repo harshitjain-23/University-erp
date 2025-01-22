@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_sheet.css">
+    <style>
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;  /* Center horizontally */
+            align-items: center;      /* Center vertically */
+        }
+
+        .menu-btn{
+            display: flex;
+            gap: 20px; /* Space between buttons */
+            flex-wrap: wrap; /* Allows buttons to wrap if needed */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-btn{
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <button name="menu-btn"><a href="Student.php" target="admin"> Add Student </a></button>
+        <br><br>
+        <button name="menu-btn"><a href="display_student.php" target="admin"> Student Details </a></button>
+        <br><br>
+        <button name="menu-btn"><a href="search_student.php" target="admin"> Search Student </a></button>
+        <br><br>
+        <button name="menu-btn"><a href="Faculty.php" target="admin"> Add Faculty </a></button>
+        <br><br>
+        <button name="menu-btn"><a href="display_faculty.php" target="admin"> Faculty Details </a></button>
+        <br><br>
+        <button name="menu-btn"><a href="search_faculty.php" target="admin"> Search Faculty </a></button>
+        <br><br>
+        <button name="menu-btn"><a href="display_enquiry.php" target="admin"> Enquiry Forms </a></button>
+
+    </div>
+    
+    
+</body>
+</html>

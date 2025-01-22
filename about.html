@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style_sheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/ee7e713503.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .aboutus {
+            /* border: 1px solid black; */
+            width: 95%;
+            display: flex;
+            margin-top: 40px;
+            margin-left: 30px;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .aboutus h1 {
+            margin-bottom: 0;
+            margin-left: 12px;
+        }
+
+        .intro {
+            width: 95%;
+            /* margin-bottom: ; */
+        }
+
+        .intro p {
+            font-style: normal;
+            font-size: 19px;
+            color: rgb(49, 52, 86);
+        }
+
+        .intro .Cimg {
+            margin-left: 60px;
+            float: right;
+            height: 400px;
+            width: 550px;
+        }
+
+        .founder {
+            margin-top: 3rem;
+            width: 95%;
+        }
+
+        .founder p {
+            font-style: normal;
+            color: rgb(49, 52, 86);
+            font-size: 19px;
+        }
+
+        .founder h2 {
+            margin-left: 12px;
+        }
+
+        .mission {
+            width: 95%;
+        }
+
+        .mission h2 {
+            margin-left: 12px;
+        }
+
+        .mission p {
+            /* font-size: 800; */
+            font-weight: 500;
+            font-style: normal;
+            color: rgb(49, 52, 86);
+            font-size: 19px;
+            /* font-family: 'Courier New', Courier, monospace; */
+        }
+
+        .history h2 {
+            margin-left: 12px;
+        }
+
+        .history p {
+            font-style: normal;
+            color: rgb(49, 52, 86);
+            font-size: 19px;
+        }
+
+        .history {
+            width: 95%;
+        }
+
+        .gover {
+            width: 95%;
+        }
+
+        .gover h2 {
+            margin-left: 12px;
+        }
+
+        /* .gover a{
+            text-decoration: none;
+        } */
+        .gover p {
+            font-style: normal;
+            color: rgb(49, 52, 86);
+            font-size: 19px;
+                }
+
+        /* <----------campus-----> */
+
+        .campus {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        .campus h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .campus-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .campus-list li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .campus-list li strong {
+            color: #007BFF;
+        }
+        .vise{
+            width: 95%;
+        }
+        .vise p{
+            margin-top: 20px;
+            font-style: normal;
+            color: rgb(49, 52, 86);
+            font-size: 19px;
+        }
+        .vise .Vimg{
+            float: left;
+            height: 350px;
+            width: 500px;
+            margin-right: 35px;
+        }
+        .vise h2{
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+
+
+
+       /* -------------footer---------- */
+
+       footer {
+            background-color:  #353434;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            padding-top: 60px;
+            margin-top: 4rem;
+            text-align: center;
+            padding: 10px;
+            /* position: fixed; */
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            height: 35%;
+            list-style: none;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+        }
+        .footer_left{
+            margin-right: 20px;
+            /* margin-left: 30px; */
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 10rem;
+            height: 10rem;
+            /* border: 1px solid rgb(247, 245, 245); */
+            margin-bottom:3px;
+        }
+
+        .footer-logo .logo{
+            height: 9rem;
+            width: 9rem;
+            object-fit:contain  ;
+            object-position: center;
+            position: absolute;
+
+        }
+        .footer-logo p {
+            font-size: 18px;
+            color: #2f2c2c;
+        }
+        .footer-icon{
+            margin-top: -15px ;
+        }
+        .footer-icon ul{
+            display: flex;
+        }
+        .footer-icon ul li{
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        .footer-icon ul li .fa {
+            font-size: 18px;
+            line-height: 60px;
+            transition: 2s;
+            color: #979292;
+        }
+
+        .footer-links {
+            margin-left: 70px;
+            display: flex;
+            gap: 50px;
+            /* flex-wrap: wrap; */
+        }
+
+        .footer-links h4 {
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: #00aaff;
+            font-size: 16px;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .inform{
+            /* padding-top: 2.4rem; */
+            margin-left: 5rem;
+            width: 320px;
+            height: 20%;
+        }
+        .inform a{
+            color: #00aaff;
+        }
+        .inform a:hover{
+            color: #00aaff;
+        }
+        .inform p{
+            padding-top: 0;
+            color: #00aaff;
+            margin-top: 0;
+            font-size: 16px;
+            font-style: normal
+        }
+        .inform h4{
+            font-size: 23px;
+            /* margin-bottom: 15px; */
+        }
+        .footer-bottom {
+            /* border: 1px solid white; */
+            margin-top: 15px;
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .footer-bottom p {
+            /* margin-bottom: 0.5rem; */
+            /* margin-top: 5px; */
+            color: #fff;
+            font-style: normal;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="sub-header-about">
+        <nav>
+            <a href="home_page.html"><img src="images/dseu_logo.png" alt="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa -regular fa-circle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="">Course</a></li> -->
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="contact-us.php">Contact</a></li>
+                    <li><a href="login.php">Login</a></li>
+                </ul>
+            </div>
+            <i class="fa -solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!------------about us content----------->
+
+    <section class="aboutus">
+        <h1>&emsp;&emsp;&emsp;&emsp;ABOUT US</h1>
+        <div class="intro">
+            <img class="Cimg" src="images/dseu_img.jpg">
+            <P>Delhi Skills and Entrepreneurship University (DSEU) is a pioneering institution established to transform
+                education through a unique focus on skill development and entrepreneurial training. Designed to bridge
+                the gap between traditional education and industry demands, DSEU offers innovative programs that empower
+                students to excel in their chosen fields.
+                <!-- <br> -->
+                With a mission to create job-ready professionals and visionary entrepreneurs, the university emphasizes
+                hands-on learning, real-world problem-solving, and collaborations with industry leaders. Its dynamic
+                curriculum integrates technical expertise, creativity, and business acumen, ensuring graduates are
+                well-prepared for both employment and self-employment opportunities.
+                <!-- <br> -->
+                DSEU is committed to nurturing a culture of innovation, inclusivity, and lifelong learning. Through
+                cutting-edge facilities, mentorship programs, and entrepreneurial ecosystems, the university inspires
+                students to explore their potential, develop essential skills, and contribute to society. At DSEU,
+                education goes beyond classrooms, fostering individuals who are equipped to shape the future.
+            </P>
+
+            <div class="founder">
+                <h2>FOUNDER</h2>
+                <p>The Government of NCT of Delhi founded the Delhi Skill and Entrepreneurship University (DSEU) in
+                    August
+                    2020. The university was established under the Delhi Skill and Entrepreneurship University Act,
+                    2019.
+                    The university's goal is to provide students with world-class skills to help them find jobs and
+                    develop
+                    an entrepreneurial mindset. DSEU offers courses at the undergraduate, postgraduate, and diploma
+                    levels
+                    in a variety of streams, including engineering and computer application. The university is
+                    recognized by
+                    the University Grants Commission (India) and is approved by AICTE.</p>
+            </div>
+        </div>
+
+        <div class="mission">
+            <h2>MISSION AND VISION</h2>
+
+            <p>The mission of Delhi Skills and Entrepreneurship University (DSEU) is to redefine education by bridging
+                the
+                gap between academic learning and industry requirements. DSEU is dedicated to equipping students with
+                practical skills, fostering innovation, and nurturing an entrepreneurial mindset to create a workforce
+                ready
+                for the demands of a dynamic world. Through its skill-based programs and real-world learning
+                opportunities,
+                DSEU empowers individuals to excel in their careers and contribute to societal progress.
+                <br>
+                <br>
+                DSEU envisions becoming a global leader in skill-based education and entrepreneurship. The university
+                strives to transform the traditional education landscape by emphasizing employability, innovation, and
+                lifelong learning. Its goal is to produce graduates who are not only highly skilled but also capable of
+                creating new opportunities for themselves and others.
+                With a strong commitment to excellence, inclusivity, and accessibility, DSEU focuses on fostering
+                collaboration with industries, enabling students to gain hands-on experience and stay ahead in a
+                competitive
+                world. By integrating academic rigor with practical expertise, DSEU aims to shape the future of
+                education
+                and entrepreneurship, ensuring its students thrive as innovators and leaders in their chosen fields.</p>
+        </div>
+        <!-- <div class="gover">
+            <h2>GOVERNANCE</h2>
+            <p>The governing officials of the university include the <a
+                    href="https://en.wikipedia.org/wiki/Chancellor_(education)" target="_blank">Chancellor</a>, the <a
+                    href="https://en.wikipedia.org/wiki/Chancellor_(education)#Vice-chancellor" target="_blank"> Vice
+                    Chancellor</a>, the <a href="https://en.wikipedia.org/wiki/Pro-vice-chancellor" target="_blank"> Pro
+                    vice-Chancellor</a>, the first members of the Court, the <a
+                    href="https://en.wikipedia.org/wiki/Board_of_directors" target="_blank"> Board of Management</a> ,
+                the <a href="https://en.wikipedia.org/wiki/Academic_senate" target="_blank"> Academic Council </a> and
+                the Finance Committee of the university.[37]
+                The <a href="https://en.wikipedia.org/wiki/President_of_India" target="_blank">President of India</a>is
+                the Visitor of the Delhi Skill and Entrepreneurship University. The <a target="_blank"
+                    href="https://en.wikipedia.org/wiki/List_of_lieutenant_governors_of_Delhi"> Lieutenant Governor of
+                    Delhi </a>Lieutenant Governor of Delhi is the Chancellor of the university. The Vice-Chancellor is
+                appointed by the Chancellor. The Chancellor is the nominal head of the university and the
+                Vice-Chancellor is the executive head of the university</p>
+        </div> -->
+
+        <div class="vise">
+            <h2>VISE CHANCELLOR</h2>
+            <img class="Vimg" src="images/vice.jpeg.jpg"   >
+            <p> <b>Dr Ashok Kumar Nagawat </b>has been appointed as the new Vice-Chancellor of the Delhi Skill and Entrepreneurship University (DSEU). Dr Nagawat took charge on July 7, 2023 as the second DSEU VC. Dr Nagawat succeeds Dr Neharika Vohra, the first DSEU VC. Before joining the DSEU, Dr Nagawat has also served as the Director of Skill Education at the ILD Skills University Rajasthan for four years. 
+                A theoretical physicist, Dr Ashok Kumar Nagawat has also served as a faculty member at the Department of Physics, University of Rajasthan. He has also been involved in various university functions and also headed five academic units with an administrative experience of over 19 years. 
+                <br>
+                <br>
+                In his career, Dr Nagawat has also served as the Dean of the Faculty of Science, a Member of Syndicate, as well as the Chief Coordinator of UIC-B. At the University of Rajasthan, he played an active role in establishing the Infonet Centre, University Innovation Cluster in Biotechnology, and Design Innovation Center. He also presented and defended a concept paper on the Centre for Converging Technologies, which was followed by the creation of the centre. </p>
+        </div>
+
+        <div class="history">
+            <h2>HISTORY</h2>
+            <p>Delhi Skill and Entrepreneurship University (DSEU) was established by the <a
+                    href="https://en.wikipedia.org/wiki/Delhi_Legislative_Assembly" target="_blank">Delhi Legislative
+                    Assembly</a> as an unitary and teaching university in August 2020 by <a
+                    href="https://en.wikipedia.org/wiki/Government_of_Delhi" target="_blank">Government of NCT of
+                    Delhi</a> under the provisions of Delhi Skill and Entrepreneurship University Act, 2019.[3] The
+                university is recognised by <a target="_blank"
+                    href="https://en.wikipedia.org/wiki/University_Grants_Commission_(India) ">University Grants
+                    Commission (India)</a>, under section 12B of the UGC Act.[5]
+
+                DSEU was merged with 15 existing government institutes and colleges such as Delhi Institute of Tool
+                Engineering (Wazirpur and Okhla Campus), GB Pant College of Engineering, Integrated Institute of
+                Technology, 10 polytechnics of the Delhi government, and 6 Skill Centres.</p>
+        </div>
+
+        <div class="campus">
+            <h2>CAMPUSES</h2>
+            <ul class="campus-list">
+                <li><strong>Okhla-I Campus:</strong> Established in 1961 as Govind Ballabh Pant Institute of Technology,
+                    now in Okhla, South East Delhi.</li>
+                <li><strong>Ashok Vihar Campus:</strong> Established in 1962 as Aryabhatt Institute of Technology,
+                    located in Ashok Vihar, North West Delhi.</li>
+                <li><strong>Maharani Bagh Campus:</strong> Established in 1962 as Meerabai Institute of Technology,
+                    located in Maharani Bagh, South East Delhi.</li>
+                <li><strong>Pusa Campus:</strong> Established in 1962 as Pusa Institute of Technology (PIT), located in
+                    Pusa, Central Delhi.</li>
+                <li><strong>Bhai Parmanand Shakarpur Campus - II:</strong> Established in 1965, merged with DSEU,
+                    located in Shakarpur, East Delhi.</li>
+                <li><strong>Ambedkar Shakarpur Campus - I:</strong> Established in 1986 as Ambedkar Institute of
+                    Technology, located in Shakarpur, East Delhi.</li>
+                <li><strong>Pitampura Campus:</strong> Established in 1986 as Kasturba Institute of Technology for
+                    Women, located in Pitampura, North West Delhi.</li>
+                <li><strong>Rohini Campus:</strong> Established in 1995 as Guru Nanak Dev Institute of Technology,
+                    located in Rohini, North West Delhi.</li>
+                <li><strong>Wazirpur Campus:</strong> Established in 2007 as Delhi Institute of Tool Engineering,
+                    located in Wazirpur, North West Delhi.</li>
+                <li><strong>Okhla-II Campus:</strong> Established in 2007 as Delhi Institute of Tool Engineering,
+                    located in Okhla, South East Delhi.</li>
+                <li><strong>Dwarka Campus:</strong> Established in 2008 as Integrated Institute of Technology Dwarka,
+                    located in Dwarka, South West Delhi.</li>
+                <li><strong>Siri Fort Campus:</strong> Established in 2013 as the World Class Skill Centre, located in
+                    Siri Fort, South Delhi.</li>
+                <li><strong>Vivek Vihar Campus:</strong> Established in 2013 as World Class Skill Centre, located in
+                    Vivek Vihar, Shahdara.</li>
+                <li><strong>Rajokri Campus:</strong> Established in 2016 as Rajokari Institute of Technology, located in
+                    Rajokri, New Delhi.</li>
+            </ul>
+        </div>
+
+
+    </section>
+
+
+    <!-- ------------footer----------------->
+
+    <footer>
+        <h2>Footer</h2>
+        <div class="footer-content">
+            <div class="footer_left">
+                <div class="footer-logo">
+                    <img class="logo" src ="images/Dseu_logoo.png" >
+                </div>
+                <div class="footer-icon">
+                    <ul>
+                        <li><a href="#" target="_blank" name="instagram"><i class="fa -brands fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa -brands fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa -brands fa-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa -brands fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa -brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <script src="https://kit.fontawesome.com/aed9932724.js" crossorigin="anonymous"></script>
+            </div>
+            <div class="footer-links">
+                <div >
+                    <h4>Menu</h4>
+                    <a href="home_page.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                    <a href="contact-us.php">Contact</a>
+                    <a href="login.php">Login</a>
+                </div>
+                <div class="inform">
+                    <h4>Information</h4>
+                    <p class="Address"> <b>Address :</b>  G/Floor, Integrated Institute Of Technology, Complex, Dwarka
+                        Sector 9, Dwarka, New Delhi, Delhi, 110077.</p>
+                        
+                    <p class="contact">
+                        <b>Conatct : </b> 1800 309 3209 , 011-4116 9950
+                    </p>
+                    
+                    <a target="_blank"  href="https://dseuonline.in/"><b>Email:</b>dseuonline@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 All Right Reserve with AcedamiX Pvt Ltd </p>
+        </div>
+    </footer>
+</body>
+
+</html>

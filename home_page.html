@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My University</title>
+    <link rel="stylesheet" href="style_sheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/ee7e713503.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="home_page.html"><img src="images/dseu_logo.png" alt="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa -regular fa-circle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="">Course</a></li> -->
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="contact-us.php">Contact</a></li>
+                    <li><a href="login.php">Login</a></li>
+                </ul>
+            </div>
+            <i class="fa -solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1><u class="custom-underline">My University</u></h1>
+            <p>Welcome to My University website. click the button bellow to know more.</p>
+            <a href="about.html" class="btn">Know More</a>
+        </div>
+    </section>
+
+<!-- ---- Courses ---- -->
+    <section class="course">
+        <h1><u class="custom-underline">Courses we offers</u></h1>
+        <p class="tagline">You won't regret after choosing any course</p>
+
+        <div class="course-row">
+            <div class="course-col">
+                <h3>Certificate</h3>
+                <p>Certification courses focus on specialized skills and knowledge, often requiring a shorter commitment than degrees. They enhance professional credibility and career advancement in specific industries or roles.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Diploma</h3>
+                <p>Diploma programs provide practical training and skills in specific fields, often completed in one to two years. They are designed for quick entry into the workforce.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Degree programs offer comprehensive education and critical thinking skills over three to four years. They prepare graduates for advanced career opportunities and often lead to higher earning potential.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr><hr>
+<!-- ----- Campuses ----- -->
+
+    <section class="campus">
+        <h1><u class="custom-underline">Our Campuses</u></h1>
+        <p class="tagline">We have total 19 Campuses in all over Delhi</p> 
+        <div class="slideshow-container">
+            <div class="slider-row">
+                <div class="campus-col">
+                    <img src="images/campus1.jpg" alt="campus1">
+                    <div class="layer">
+                        <h3>Shakarpur</h3>
+                    </div>
+                </div>
+        
+                <div class="campus-col">
+                    <img src="images/campus2.jpg" alt="campus2">
+                    <div class="layer">
+                        <h3>Pusa</h3>
+                    </div>
+                </div>
+        
+                <div class="campus-col">
+                    <img src="images/campus3.jpg" alt="campus3">
+                    <div class="layer">
+                        <h3>Ashok Vihar</h3>
+                    </div>
+                </div>
+        
+                <div class="campus-col">
+                    <img src="images/campus4.jpg" alt="campus4">
+                    <div class="layer">
+                        <h3>Wazirpur</h3>
+                    </div>
+                </div>
+        
+                <div class="campus-col">
+                    <img src="images/campus5.jpg" alt="campus5">
+                    <div class="layer">
+                        <h3>Rajokri</h3>
+                    </div>
+                </div>
+        
+                <div class="campus-col">
+                    <img src="images/campus6.jpg" alt="campus6">
+                    <div class="layer">
+                        <h3>Dwarka</h3>
+                    </div>
+                </div>
+        
+                <div class="campus-col">
+                <img src="images/campus7.jpg" alt="campus6">
+                <div class="layer">
+                    <h3>Rohini</h3>
+                </div>
+                </div>
+                
+                <div class="campus-col">
+                <img src="images/campus8.jpg" alt="campus6">
+                <div class="layer">
+                    <h3>Sirifort</h3>
+                </div>
+                </div>
+        
+                <div class="campus-col">
+                <img src="images/campus9.jpg" alt="campus6">
+                <div class="layer">
+                    <h3>Jafarpur</h3>
+                </div>
+                </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            
+        </div>
+
+
+        
+    </section>
+
+    <hr><hr>
+
+    <!-- ----- Facilities ----- -->
+    <section class="facilities">
+        <h1><u class="custom-underline">Facilities</u></h1>
+        <p>Our University offers various facilities for student.</p>
+
+        <div class="facilities-row1">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="library">
+                <h3>Library</h3>
+                <p>We have a huge collection of Books in our library.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="cafeteria">
+                <h3>Cafeteria</h3>
+                <p>For students, we have a cafeteria to have good food because we believe Good Food = Good Mood.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="Games">
+                <h3>Sports</h3>
+                <p>Studies are not only thing to do, so that is why we have various types of sports.</p>
+            </div>
+            <div class="facilities-row2">
+                <div class="facilities-col">
+                    <img src="images/Classrooms.jpg" alt="classroom">
+                    <h3>Classrooms</h3>
+                    <p>Most of time students stay in there classroom so we have the best facilities there.</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="images/labs.jpg" alt="labs">
+                    <h3>Labs</h3>
+                    <p>For practical knowledge, we offer various Labs for various streams.</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="images/infrastructure.jpg" alt="infrastructure">
+                    <h3>Infrastructure</h3>
+                    <p>We also have a very maintained infrastructure( college as well as hostels) for our students stay.</p>
+                </div>
+            </div>
+            
+        </div>    
+    
+    </section>
+
+
+ 
+
+<!-- ----- Testimonials ----- -->
+    <section class="testimonials">
+        <h1><u class="custom-underline">Testimonials</u></h1>
+        <p>What our student says about us.</p>
+
+        <div class="testimonials-row">
+            <div class="testimonials-cols">
+                <img src="images/Harshit.jpg" alt="testimonial img1">
+                <p>“This university has given me invaluable opportunities, inspiring professors, and a supportive community. My learning and personal growth here have been truly transformative.”</p>
+                <h3>- Harshit Jain</h3>
+                <i class="fa -solid fa-star"></i>
+                <i class="fa -solid fa-star"></i>
+                <i class="fa -solid fa-star"></i>
+                <i class="fa -solid fa-star"></i>
+                <i class="fa -regular fa-star-half-stroke"></i>
+            </div>
+            <div class="testimonials-cols">
+                <img src="images/Neha.jpg" alt="testimonial img2">
+                <p>“From academic excellence to vibrant campus life, this university provides everything needed for a successful future. I’m grateful for the experiences and connections made here.”</p>
+                <h3>- Neha Dilodh</h3>
+                <i class="fa -solid fa-star"></i>
+                <i class="fa -solid fa-star"></i>
+                <i class="fa -solid fa-star"></i>
+                <i class="fa -solid fa-star"></i>
+                <i class="fa -regular fa-star"></i>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- ---------- Call TO Action ---------- -->
+    <section class="calltoaction">
+        <h1><u class="custom-underline">Enroll Now</u></h1>
+        <p>What are you waiting for just click the button now and make your future bright</p>
+        <a href="contact-us.php" class="btn">Contact us</a>
+    </section>
+
+
+    <hr><hr>
+    <footer>
+        <h2>Footer</h2>
+        <div class="footer-content">
+            <div class="footer_left">
+                <div class="footer-logo">
+                    <img class="logo" src ="images/Dseu_logoo.png" >
+                </div>
+                <div class="footer-icon">
+                    <ul>
+                        <li><a href="#" target="_blank" name="instagram"><i class="fa -brands fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa -brands fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa -brands fa-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa -brands fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa -brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <script src="https://kit.fontawesome.com/aed9932724.js" crossorigin="anonymous"></script>
+            </div>
+            <div class="footer-links">
+                <div >
+                    <h4>Menu</h4>
+                    <a href="home_page.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                    <a href="contact-us.php">Contact</a>
+                    <a href="login.php">Login</a>
+                </div>
+                <div class="inform">
+                    <h4>Information</h4>
+                    <p class="Address"> <b>Address :</b>  G/Floor, Integrated Institute Of Technology, Complex, Dwarka
+                        Sector 9, Dwarka, New Delhi, Delhi, 110077.</p>
+                        
+                    <p class="contact">
+                        <b>Conatct : </b> 1800 309 3209 , 011-4116 9950
+                    </p>
+                    
+                    <a target="_blank"  href="https://dseuonline.in/"><b>Email:</b>dseuonline@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 All Right Reserve with AcedamiX Pvt Ltd </p>
+        </div>
+    </footer>
+
+
+<!-- -------JavaScript for Toggle Menu------- -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu(){
+            navlinks.style.right = "-200px"
+        }
+    </script>
+
+    <!-- ------JavaScript for slider------ -->
+    <script>
+        let slideIndex = 0;
+    showSlides();
+
+    function plusSlides(n) {
+        slideIndex += n;
+        showSlides();
+    }
+
+    function currentSlide(n) {
+        slideIndex = n - 1; // Adjust for zero-based index
+        showSlides();
+    }
+
+    function showSlides() {
+        const slides = document.getElementsByClassName("campus-col");
+        const dots = document.getElementsByClassName("dot");
+        const totalSlides = slides.length;
+
+        // Reset slideIndex if out of bounds
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+
+        // Hide all slides
+        for (let i = 0; i < totalSlides; i++) {
+            slides[i].style.display = 'none'; // Hide slides by default
+        }
+
+        // Show the current set of slides (3 images at a time)
+        for (let i = 0; i < 3; i++) {
+            slides[(slideIndex + i) % totalSlides].style.display = 'block'; // Show 3 images
+        }
+
+        // Update dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[slideIndex].className += " active";
+    }
+    </script>
+
+
+</body>
+</html>
